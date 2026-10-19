@@ -1,0 +1,70 @@
+digraph {
+	rankdir=LR size=10
+	Central [label="Data Science in Energy Optimization" color=lightblue shape=ellipse style="bold, filled"]
+	DataCollection [label="1. Data Collection" color=lightgreen shape=box style=filled]
+	Central -> DataCollection
+	IoTSensors [label="IoT Sensors
+(Pressure, Temperature, Fuel Mix)" shape=box]
+	HistoricalData [label="Historical Data
+(2 Years of Logs)" shape=box]
+	ExternalData [label="External Data
+(Weather, Regulatory Benchmarks)" shape=box]
+	ToolsTechniques [label="Tools and Techniques
+(Kafka, MQTT, AWS)" shape=box]
+	DataCollection -> IoTSensors
+	DataCollection -> HistoricalData
+	DataCollection -> ExternalData
+	DataCollection -> ToolsTechniques
+	Preprocessing [label="2. Data Preprocessing" color=lightgreen shape=box style=filled]
+	Central -> Preprocessing
+	Cleaning [label="Data Cleaning
+(Remove Noise, Handle Missing Values)" shape=box]
+	Normalization [label="Normalization
+(Scale Variables)" shape=box]
+	FeatureEngineering [label="Feature Engineering
+(Create Derived Features)" shape=box]
+	Preprocessing -> Cleaning
+	Preprocessing -> Normalization
+	Preprocessing -> FeatureEngineering
+	ModelDevelopment [label="3. Model Development" color=lightgreen shape=box style=filled]
+	Central -> ModelDevelopment
+	HeatRateModel [label="Heat Rate Optimization
+(Neural Network)" shape=box]
+	AnomalyDetection [label="Anomaly Detection
+(Isolation Forest)" shape=box]
+	EmissionPrediction [label="Emission Prediction
+(Random Forest)" shape=box]
+	ModelDevelopment -> HeatRateModel
+	ModelDevelopment -> AnomalyDetection
+	ModelDevelopment -> EmissionPrediction
+	TrainingEvaluation [label="4. Model Training & Evaluation" color=lightgreen shape=box style=filled]
+	Central -> TrainingEvaluation
+	TrainingProcess [label="Training Process
+(Data Splitting, Grid Search)" shape=box]
+	EvaluationMetrics [label="Evaluation Metrics
+(MAE, RMSE, Precision-Recall, F1-Score)" shape=box]
+	TrainingEvaluation -> TrainingProcess
+	TrainingEvaluation -> EvaluationMetrics
+	Deployment [label="5. Deployment" color=lightgreen shape=box style=filled]
+	Central -> Deployment
+	RealTimeIntegration [label="Real-Time Integration
+(Docker, Kubernetes)" shape=box]
+	DashboardDevelopment [label="Dashboard Development
+(Tableau, Power BI)" shape=box]
+	FeedbackLoop [label="Feedback Loop
+(Monitor & Retrain Models)" shape=box]
+	Deployment -> RealTimeIntegration
+	Deployment -> DashboardDevelopment
+	Deployment -> FeedbackLoop
+	ResultsImpact [label="6. Results & Impact" color=lightgreen shape=box style=filled]
+	Central -> ResultsImpact
+	OperationalEfficiency [label="Operational Efficiency
+(2% Improvement)" shape=box]
+	CostSavings [label="Cost Savings
+($4.5M Annually)" shape=box]
+	EnvironmentalBenefits [label="Environmental Benefits
+(340,000 Tons CO2 Reduction)" shape=box]
+	ResultsImpact -> OperationalEfficiency
+	ResultsImpact -> CostSavings
+	ResultsImpact -> EnvironmentalBenefits
+}
