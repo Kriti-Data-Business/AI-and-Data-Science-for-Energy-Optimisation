@@ -62,7 +62,7 @@ An eventual plant pilot would deliver: (i) audited and time-aligned operating da
 
 Australia is a useful context for this problem because energy-market planning, generation-fleet transition and industrial decarbonisation are happening together:
 
-- The **Australian Energy Market Operator (AEMO)** published its **2026 Integrated System Plan** on **25 June 2026**. Its National Electricity Market (NEM) roadmap considers generation, storage and transmission development to 2050; it creates a planning context for reliable, least-cost transition—not a source of boiler-level sensor measurements. [AEMO 2026 ISP](https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp)
+- The **Australian Energy Market Operator (AEMO)** published its **2026 Integrated System Plan** on **25 June 2026**. Its National Electricity Market (NEM) roadmap considers generation, storage and transmission development to 2050; it creates a planning context for reliable, least-cost transition not a source of boiler-level sensor measurements. [AEMO 2026 ISP](https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp)
 - The **Australian Energy Regulator's State of the Energy Market 2025** describes the changing wholesale, network, retail and generation environment. Its report and data supplements are useful for **market context and benchmarking**. [AER report](https://www.aer.gov.au/publications/reports/performance/state-energy-market-2025)
 - The **Clean Energy Regulator (CER)** publishes National Greenhouse and Energy Reporting (**NGER**) electricity-sector emissions and generation information at a designated-facility level. Such data may support **annual facility-level context**, but cannot replace high-frequency operating or continuous emissions monitoring data. [CER NGER datasets](https://cer.gov.au/markets/reports-and-data/nger-reporting-data-and-registers)
 - **CSIRO/AEMO GenCost 2025–26** provides published technology-cost comparisons and electricity-system modelling context. It is relevant for **strategic comparisons**, not as a source of site-specific efficiency improvement estimates. [CSIRO GenCost](https://www.csiro.au/en/research/technology-space/energy/electricity-transition/gencost)
@@ -78,7 +78,7 @@ The **NEM** covers interconnected eastern and southern market regions (Queenslan
 
 ### Problem statement
 
-> **How might a generating plant or industrial steam system use historical process conditions to identify inefficient operating regimes, flag possible emissions risk, and evaluate potential adjustments—without compromising safety, availability, environmental compliance or operator control?**
+> **How might a generating plant or industrial steam system use historical process conditions to identify inefficient operating regimes, flag possible emissions risk, and evaluate potential adjustments without compromising safety, availability, environmental compliance or operator control?**
 
 ### Intended users
 
@@ -373,7 +373,7 @@ for name, model in [
 PY
 ```
 
-> **Interpretation:** If a random-forest model performs similarly to—or worse than—the naive baseline, report that finding. Do not fabricate lift or savings. With this undated and undocumented sample, even a better holdout score demonstrates only a statistical pattern in these sample records.
+> **Interpretation:** If a random-forest model performs similarly to or worse than the naive baseline, report that finding. Do not fabricate lift or savings. With this undated and undocumented sample, even a better holdout score demonstrates only a statistical pattern in these sample records.
 
 For serious work, pin dependencies, add tests, track experiment seeds and build a **time-aware pipeline** only after obtaining timestamped measurements. Windows users can run the same Python code from a local `.py` file if their shell does not support `<<'PY'` heredocs.
 
